@@ -73,7 +73,7 @@ body{
     padding: 10%;
     display: flex;
    flex-direction: column;
-    background-color: #981a3b;;
+    background-color: #981a3b;
     border-style: none;
     margin-top: 20px;
     box-shadow: 10px 10px 5px 0px rgba(255, 224, 224, 0.75);
@@ -82,6 +82,7 @@ body{
     
 }
 .groups-btn{
+    font-weight: bold;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
@@ -89,9 +90,9 @@ body{
     cursor: pointer;
     display: block;
     width: 180px;
-    font-weight: bold;
 }
 .blog-btn{
+    font-weight: bold;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
@@ -99,9 +100,9 @@ body{
     cursor: pointer;
     display: block;
     width: 180px;
-    font-weight: bold;
 }
 .upcoming-btn{
+    font-weight: bold;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
@@ -109,15 +110,7 @@ body{
   cursor: pointer;
   display: block;
   width: 180px;
-  color: white;
-  font-weight: bold; background-color: gray;
-  
 
-
-}
-.link{
-    text-decoration: none;
-    color: black;
 }
 /* blog part start */
 .blog-contain{
@@ -134,16 +127,18 @@ body{
 }
 .blog-img{
     width: 100%;
+    margin: 0;
 }
 .blog-tax{
-        box-shadow: 10px 10px 5px 0px white;
+        box-shadow: 10px 10px 5px 0px gray;
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
+       margin-left: 10%;
 }
 /* footer box */
 footer{
-    background-color: #981a3b;
     color: white;
+    background-color: #981a3b;
 }
 .footer-header{
     text-align: center;
@@ -153,6 +148,11 @@ footer{
     padding-left: 20%;
     display: flex;
 }
+.vs-style{
+    margin-left: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
 .footer-tax{
     padding: 3%;
 }
@@ -160,6 +160,17 @@ hr{
     width: 70%;
     border: 1px solid whitesmoke;
 }
+.flag-article{
+    text-align: center;
+}
+.image-parent{
+display: flex;
+ margin-top: 20px;
+ margin-right: 35px;
+
+
+}
+
 /* mobile view */
 @media only screen and (max-width:688px) {
     .half-width{
@@ -224,13 +235,15 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
     .blog-tax{
-        width: 100%;
+    
         box-shadow: 10px 10px 5px 0px rgba(255, 224, 224, 0.75);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(229, 219, 219, 0.75);
         -moz-box-shadow: 10px 10px 5px 0px rgba(234, 227, 227, 0.75);
         border-radius: 10px;
         margin-top: 10px;
+        margin-right: 20px;
     }
+    
     .footer-container{
         width: 100%;
         
@@ -246,10 +259,5 @@ hr{
         margin-left: 80px;
     }
 }
-/* Tablet responsive */
-@media screen and  (max-width: 992px) and (min-width: 689){
-    .button-group{
-        padding: 150px;
-    }
-}
+
 
